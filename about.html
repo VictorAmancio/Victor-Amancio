@@ -10,24 +10,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
     <title>Sobre Mim</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     
-    
-    <div id="site-dev">
-      <img
-        src="./assets/alert.gif"
-        alt="Gif informando que a pagina está em Desenvolvimento"
-      />
+    <div class="container-fluid">
+   <header class="row-1" id="header" >
+    <div id="logo-container">
+      <img src="./assets/logo-about.png" alt="Imagem com duas letras VS" id="logo">
+     
+    </div>
+    <p>Desenvolvedor Front-end</p>
+    </header>
+
+      <nav id="navbar" class="container">
+      <div class="row justify-content-center">
+        <a href="./index.html">HOME</a>
+        <a href="./about.html">ABOUT</a>
+      </div> 
     </div>
 
-      <button id="back">
-      <a href="./index.html">Voltar</a>
-    </button>
-  <div id="social-links">
+    <!--MAIN BANNER-->
+
+    <div class="container" id="main-image-container">
+      <div class="main-banner">
+         
+        <h2>Olá Everyone!</h2>
+
+        <p>Bom falando um pouco sobre mim, possuo experiencia na área de Análise de sistemas, suporte e Infraestrutura, sou 
+          apaixonado por tecnologia minha vontade a esse mundo
+          começou ainda quando era muito novo sem muita condição na época mas sempre em buscar de aprender,
+          Hoje estou buscando minha primeira experiência na área de Desenvolvimento. </p>
+        
+        <p>Formado em Análise e Desenvolvimento de Sistemas, além disso estou fazendo cursos complementares para me          especializar, o curso tem como objetivo o Desenvolvimento WEB com JS, CSS, HTML, VUE, NODE JS etc.. também sou muito focado em resolver problemas, sou curioso , gosto de compartilhar ideias, de ensinar e 
+          ser ensinado, trabalhar em equipe ajudar e ser ajudado</p>
+           <p>Em minha vida pessoal sou atencioso e perfeccionista sempre busco entender sobre a vida, sou admirador da natureza, tenho como Hobbies tocar instrumentos como guitarra e violão entre outros,</p>
+
+
+        <p>Podemos trocar uma ideia legal e até mesmo tomar um café, me procure no meu <a href="https://www.linkedin.com/in/victor-amancio-da-silva-58b4021b0/">Linkedin</a> e vamos conversa, Abraço!</p>
+
+
+      </div>
+    </div>
+
+    <!--Certificados-->
+
+    <div class="container" id="gallery-container">
+      <div class="col-12">
+        <h1>Certificados</h1>
+      </div>
+
+      <div class="row gx-4">
+        <div class="col-12 col-md-6">
+          <div class="container-img center-image">
+            <img src="./assets/Diploma.jpg" alt="Diploma Uniasselvi">
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="container-img center-image">
+            <img src="./assets/DevLinks-Cert.jpg" alt="Certificado DevLinks">
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="container-img center-image">
+            <img src="./assets/CertificadoSQL.jpg" alt="Certificado SQL">
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="container-img center-image">
+            <img src="./assets/CertificadoAbap.jpg" alt="CertificadoAbap">
+          </div>
+        </div>
+
+         <div class="col-12 col-md-6">
+          <div class="container-img center-image">
+            <img src="./assets/CertificadoDevelopers.jpg " alt="Certificado BI">
+            
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="container-img center-image">
+            <img src="./assets/CertificadoBI.jpeg" alt="Certificado BI">
+          </div>
+        </div>
+
+       
+
+     
+
+      <div id="social-links">
         <a href="https://github.com/VictorAmancio" target="_blank">
           <ion-icon name="logo-github"></ion-icon>
         </a>
@@ -47,13 +127,14 @@
       </div>
     </div>
     <footer>
-       Front-End Developer<a
+      Pagina Ainda em Desenvolvimento, Front-End Developer<a
         href="https://www.linkedin.com/in/victor-amancio-da-silva-58b4021b0/"
         target="_blank"
       >
-        Victor Amancio
+        Victor Amancio 
       </a>
     </footer>
+    
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
