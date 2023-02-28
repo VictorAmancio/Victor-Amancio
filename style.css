@@ -10,7 +10,7 @@ body {
 
   /* Agrupamento*/
   background: var(--bg-url) no-repeat top center / cover;
-  height: auto;
+  
 }
 
 :root {
@@ -22,7 +22,6 @@ body {
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
-
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
@@ -31,6 +30,7 @@ body {
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
+ 
 }
 
 * {
@@ -43,6 +43,7 @@ body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
+
 #container {
   width: 100%;
   max-width: 588px;
@@ -138,7 +139,7 @@ ul li a:hover {
   border: 1.5px solid var(--text-color);
 }
 
-/*Linmks Sociais*/
+/*Links Sociais*/
 
 #social-links {
   display: flex;
@@ -168,6 +169,7 @@ footer {
 }
 
 /*ABOUT*/
+
 
 /*Header*/
 
@@ -217,7 +219,7 @@ footer {
   margin: 0;
   overflow: auto;
   background-color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   position: relative;
   padding: 0 35px;
   height: 500px;
@@ -247,19 +249,70 @@ footer {
   color: black;
 }
 
+/*Skills*/
+
+.container-skills {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.retangulos {
+  height: 100%;
+  width: auto;
+  display: flex;
+  margin: 12px;
+}
+
+.retangulos > details {
+  width: 350px;
+  text-align: center;
+}
+
+summary {
+  color: #5c16c5;
+  padding: 15px;
+}
+
+summary:hover {
+  transition: 0.7s;
+  color: antiquewhite;
+}
+
+details h2 {
+  background: rgb(254, 255, 255);
+  background: linear-gradient(
+    40deg,
+    rgba(254, 255, 255, 1) 36%,
+    rgba(200, 177, 236, 1) 45%,
+    rgba(226, 206, 255, 0.939) 81%
+  );
+
+  font-family: 'Poppins', sans-serif;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+details p {
+  text-align: center;
+}
 
 /*Galeria Certificados*/
-.row{
+
+.row {
   visibility: hidden;
 }
 
 .container-img img {
   width: 100%;
   box-shadow: -2px 0px 85px 4px rgba(180, 180, 180, 0.352);
-  
 }
-
-
 
 #gallery-container h1 {
   text-align: center;
@@ -277,9 +330,12 @@ footer {
 }
 
 /*Medias Queries*/
-
-
-
+@media (max-width: 1000px) {
+  .container-skills {
+    font-size: 16px;
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 600px) {
   .main-banner p {
