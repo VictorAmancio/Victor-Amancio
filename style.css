@@ -252,10 +252,11 @@ footer {
 /*Skills*/
 
 .container-skills {
+  
   height: 100%;
-  padding: 20px;
+ padding: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 100px;
 }
 
@@ -272,6 +273,7 @@ footer {
 }
 
 summary {
+
   color: #5c16c5;
   padding: 15px;
 }
@@ -299,8 +301,9 @@ details h2 {
   line-height: 1.1;
 }
 
-details p {
-  text-align: center;
+details ul > li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 /*Galeria Certificados*/
