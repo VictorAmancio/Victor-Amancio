@@ -31,6 +31,7 @@ body {
   --switch-bg-url: url(./assets/sun.svg);
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -45,12 +46,13 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-
   padding: 0 24px;
   margin: 56px auto 0px;
 }
 
+
 #profile {
+  
   text-align: center;
   padding: 24px;
 }
@@ -59,12 +61,13 @@ body * {
   width: 112px;
  box-shadow: 1px 1px 15px 7px rgba(0,0,0,1);
   border-radius: 75px;
-}
+  animation: up-and-down 1s infinite alternate;}
 
 #profile p {
   margin-top: 8px;
   font-weight: 500;
   line-height: 24px;
+  
 }
 
 /*Switch*/
@@ -129,7 +132,7 @@ ul li a {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid var(--stroke-color);
-box-shadow: 6px 9px 9px -1px rgba(0,0,0,1);
+  box-shadow: 6px 9px 9px -1px rgba(0,0,0,1);
 
   transition: background 0.3s;
 }
@@ -140,6 +143,52 @@ ul li a:hover {
   border: 1.5px solid var(--text-color);
 }
 
+.mini-skills{
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 0 95px;
+}
+.logos-skills img{ 
+  width: 25px;
+}
+
+#html{
+  width: 30px;
+}
+
+#logo-bootstrap{
+  width: 28px;
+}
+
+
+.mini-skills-sql{
+  justify-content: center;
+}
+
+#Logo-SQL{
+  width: 50px;
+  justify-content: center;
+}
+
+.mini-skills-git{
+  justify-content: center;
+  display: flex;
+}
+
+#grid-ex{
+  background-color: black;
+  
+}
+
+
+#grid-ex p{
+  color: #fff;
+}
+#logo-git{
+  padding: 2px;
+  width: 30px;
+}
 /*Links Sociais*/
 
 #social-links {
@@ -177,6 +226,7 @@ footer {
   text-align: center;
   padding: 20px;
   border-bottom: 1px solid #ccc;
+  
 }
 
 #header p {
@@ -187,11 +237,13 @@ footer {
 #logo-container {
   display: flex;
   justify-content: center;
+  
 }
 
 #logo {
   width: 230px;
-  margin-right: 10px;
+  margin-right: 10px
+  
 }
 
 /*NAVBAR*/
@@ -202,6 +254,7 @@ footer {
 }
 
 #navbar a {
+  
   text-decoration: none;
   font-size: 12px;
   width: 80px;
@@ -228,12 +281,18 @@ footer {
 }
 
 .main-banner h2 {
+   
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   padding-top: 30px;
   padding-bottom: 30px;
   color: black;
   text-align: center;
+}
+
+.main-banner h2 img{
+  animation: up-and-down-2 1s infinite alternate;
+  width: 80px;
 }
 
 .main-banner p {
@@ -314,8 +373,8 @@ details ul > li {
 
 .container-img img {
   width: 100%;
-  box-shadow: 6px 9px 9px -1px rgba(0,0,0,1);
-  border-radius: 15px;
+  
+ 
 }
 
 #gallery-container h1 {
@@ -376,7 +435,7 @@ height: 361.453px;
 span p{
   text-align: center;
   padding-top: 10px;
-
+  color: #fff;
 }
 
 
@@ -425,6 +484,16 @@ span p{
   }
 }
 
+
+@media (max-width: 1000px){
+
+  .main-banner h2 img {
+    width: 40px;
+  }
+
+}
+    
+
 /*Animation*/
 
 @keyframes animaborda {
@@ -452,4 +521,24 @@ span p{
   to {
     left: 0;
   }
+}
+
+
+@keyframes up-and-down{
+    0% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes up-and-down-2{
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
